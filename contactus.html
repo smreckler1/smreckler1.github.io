@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<title>Contact Us</title>
+
+<style>
+    form{
+        background-color:deepskyblue;
+        padding: 20px;
+        width: 500px;
+        margin: 50px auto;
+    }
+
+    textarea{
+        background-color: rgb(221, 200, 173);
+    }
+
+    input[type="submit"]{
+        background-color: rgb(185, 131, 232);
+    }
+
+    input[type="Reset"]{
+        background-color: rgb(185, 131, 232);
+    }
+    .navbar a{margin-right: 20px;
+    font-weight: bold;}
+    h1{text-align: center;}
+</style>
+
+</head>
+
+<body>
+
+ <h1>Interested in Learning More?</h1>
+
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="hiking.html">Hiking</a>
+<a href="contactus.html">Learn More</a>
+<a href="https://www.ncparks.gov/" target="_blank">NC State Parks</a>
+</div>
+
+ <form action="submit_form.php" method="POST">
+    <h2>I want to go hiking!</h2>
+   <p>
+      <label for="first">First Name:</label><br>
+      <input type="text" name="first" id="first">
+   </p>
+   <p>
+      <label for="last">Last Name:</label><br>
+      <input type="text" name="last" id="last">
+   </p>
+
+   <label for="Select your intensity level">How comfortable are you on the trail?:</label><br>
+   <select id="Select your intensity level" name="Select your intensity level" required>
+    <option value="" disabled selected>Select your intensity level:</option>
+    <option value="Newbie">Newbie</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+    <option value="Expert">Expert</option>
+   </select><br><br>
+
+   <p>How often do you hike?</p>
+
+   <div>
+      <input type="radio" name="time" value="Weekly" id="weekly">
+      <label for="weekly">Once a week</label>
+   </div>
+   <div>
+      <input type="radio" name="time" value="Monthly" id="Monthly">
+      <label for="Monthly">Once a month</label>
+   </div>
+    <div>
+      <input type="radio" name="time" value="never" id="never">
+      <label for="never">Never hiked before</label>
+   </div>
+   <br>
+
+
+   <textarea name="Comments" rows="4" cols="50">Enter your comment here...</textarea><br>
+
+   <input type="submit" value="Submit">
+   <input type="reset" value="Reset">
+
+</form>
+</body>
+
+<footer>
+<p>Copyrights &copy; 2025</a></p>
+</footer>
+
+</html>
